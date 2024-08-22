@@ -16,11 +16,14 @@
               clifford: "#da373d",
               button: "#abef5f",
               "border-1": "#E9E9E9",
-              "color1": "#77AAEA",
-              "color2": "#A4DAC3",
-              "color3": "#EFDA6E",
-              "color4": "#E7C1D3"
+              color1: "#77AAEA",
+              color2: "#A4DAC3",
+              color3: "#EFDA6E",
+              color4: "#E7C1D3",
             },
+            backgroundImage: {
+        'hero': "url('./assets/bg.jpg')",
+      },
           },
         },
       };
@@ -189,7 +192,9 @@
       </div>
       <!-- Statistics Section -->
       <div class="bg-gray-100 px-5 lg:px-32 pb-32 flex justify-center">
-        <div class="flex flex-col lg:flex-row shadow bg-white flex-1 rounded-xl p-6">
+        <div
+          class="flex flex-col lg:flex-row shadow bg-white flex-1 rounded-xl p-6"
+        >
           <div class="stat place-items-center gap-2">
             <div class="stat-title">
               <i class="fa-regular fa-message text-3xl"></i>
@@ -234,15 +239,16 @@
           <h2 class="text-5xl font-extrabold">Our Work Process</h2>
           <p class="text-gray-500">
             The barn house captivates with its blend of rustic charm and modern
-            sophistication,<br> featuring weathered wood, sleek metal accents.
+            sophistication,<br />
+            featuring weathered wood, sleek metal accents.
           </p>
-          <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 ">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
             <div
               class="flex flex-col justify-center text-left items-start p-5 bg-color4 gap-3 rounded-xl"
             >
               <img class="w-min" src="./assets/concept.png" alt="" />
               <h3 class="font-bold text-lg">Concept</h3>
-              <p class="text-gray-500 ">
+              <p class="text-gray-500">
                 The barn house captivates with its blend of rustic charm and
                 modern.
               </p>
@@ -279,6 +285,109 @@
             </div>
           </div>
         </div>
+      </div>
+      <!-- Portfolio Section -->
+      <div class="mx-5 lg:mx-32 my-24 flex flex-col items-center gap-6 text-center"
+      >
+        <div>
+          <button class="p-1 px-3 bg-green-100 rounded-2xl font-bold">
+            <i class="fa-solid fa-arrow-right rounded-full text-black"></i>
+            Explore Our Latest Works
+          </button>
+        </div>
+        <h2 class="text-4xl font-extrabold">Our Latest Portfolio</h2>
+        <p>
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication,<br />
+          featuring weathered wood, sleek metal accents.
+        </p>
+        <div>
+          <div class=" flex flex-col lg:grid grid-cols-4 grid-rows-2 gap-6">
+            <!-- Item 1 -->
+            <div class="col-span-3 flex text-left gap-6 p-6 border rounded-xl flex-col lg:flex-row"">
+              <img src="./assets/img1.png" alt="" />
+              <div class="space-y-5">
+                <h4 class="font-bold text-xl">Commercial</h4>
+                <p class="text-gray-500">
+                  The barn house captivates with its blend of rustic charm and
+                  modern. The barn house captivates with its blend of rustic
+                  charm and modern .
+                </p>
+                <button
+                  class="font-bold bg-button text-black bg-white border-none shadow-none rounded-3xl text-lg w-full lg:w-auto"
+                >
+                  View Details<i
+                    class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-button text-black ml-2 p-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="col-start-4 p-6 border rounded-xl flex flex-col lg:flex-row">
+              <img class="w-full" src="./assets/img2.png" alt="" />
+            </div>
+            <!-- Item 3 -->
+            <div class="row-start-2 p-6 border rounded-xl flex flex-col lg:flex-row" ">
+              <img class="w-full" src="./assets/img3.png" alt="" />
+            </div>
+            <!-- Item 4 -->
+            <div class="col-span-2 row-start-2 flex text-left gap-6 p-6 border rounded-xl flex-col lg:flex-row"">
+              <img src="./assets/img4.png" alt="" />
+              <div class="space-y-5">
+                <h4 class="font-bold text-xl">Commercial</h4>
+                <p class="text-gray-500">
+                  The barn house captivates with its blend of rustic charm and
+                  modern. The barn house captivates with its blend of rustic
+                  charm and modern .
+                </p>
+                <button
+                  class="font-bold bg-button text-black bg-white border-none shadow-none rounded-3xl text-lg w-full lg:w-auto"
+                >
+                  View Details<i
+                    class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-button text-black ml-2 p-1"
+                  ></i>
+            </div></div>
+
+            <!-- Item 5 -->
+            <div class="col-start-4 row-start-2 p-6 border rounded-xl flex flex-col lg:flex-row"">
+              <img class="w-full" src="./assets/img5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Form Section -->
+       <div class="lg:px-60 px-5 py-24 bg-hero flex flex-col items-center text-center gap-6" >
+        <div>
+          <button class="p-1 px-3 bg-green-100 rounded-2xl font-bold">
+            <i class="fa-solid fa-arrow-right rounded-full text-black"></i>
+            Let's Connect!
+          </button>
+       </div>
+       <h3 class="font-extrabold text-4xl" >Let’s Discuss Next Project</h3>
+       <p class="text-gray-600 font-semibold">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+       <!-- Form section inputs -->
+       <div class="w-full">
+        <div class="flex flex-col lg:grid grid-cols-4 grid-rows-5 gap-4">
+          <div class="col-span-2"><input type="text" placeholder="First Name*" class="input input-bordered w-full max-w-2xl rounded-3xl p-6 border-none" /></div>
+          <div class="col-span-2 col-start-3"><input type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-2xl rounded-3xl p-6 border-none" /></div>
+          <div class="col-span-2 row-start-2"><input type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-2xl rounded-3xl p-6 border-none" /></div>
+          <div class="col-span-2 col-start-3 row-start-2"><input type="text" placeholder="Email Address*" class="input input-bordered w-full max-w-2xl rounded-3xl p-6 border-none" /></div>
+          <div class="col-span-4 row-span-3 row-start-3 ">
+            <textarea placeholder="Write Your Message Here"
+            class="textarea textarea-bordered textarea-lg w-full max-w-5xl h-52 lg:h-full p-6 resize-none rounded-3xl border-none"></textarea>
+          </div>
+       </div>
+      </div>
+      <!-- button  -->
+       <div class="w-full">
+      <a
+      class="btn flex bg-button text-black rounded-3xl text-lg"
+    >
+      Send Mail
+      <i
+        class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-black text-white p-1"
+      ></i
+    ></a></div>
       </div>
     </main>
   </body>
